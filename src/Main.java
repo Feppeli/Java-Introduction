@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -35,10 +37,20 @@ public class Main {
         
         //Utilizando Matrizes (Arrays)
 
-        int[] idades = {2,3,4};
-        idades[0] = 78;
+        //Array list
+        ArrayList<Integer> idades = new ArrayList<Integer>();
+        idades.add(22);
+        idades.add(50);
+        idades.add(30);
+        idades.remove(1);
+
+
+        int idade_principal = idades.getFirst();
+        int idade_size = idades.size();
 
         System.out.println(idades);
+        System.out.println(idade_principal);
+        System.out.println(idade_size);
 
     }
 }
